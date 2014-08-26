@@ -855,11 +855,11 @@
 <vertex x="17.319753125" y="17.018" curve="247.49988"/>
 <vertex x="16.22224375" y="16.284678125"/>
 </polygon>
-<text x="12.683996875" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">PWM*</text>
+<text x="12.683996875" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">PWM*</text>
 <text x="12.970003125" y="4.318" size="1.016" layer="121" font="vector" ratio="20" rot="R90">TXO</text>
 <text x="10.938003125" y="4.318" size="1.016" layer="121" font="vector" ratio="20" rot="R90">RXI</text>
-<text x="28.431996875" y="32.766" size="1.27" layer="121" font="vector" ratio="16" rot="R180">DIGITAL</text>
-<text x="12.175996875" y="22.606" size="1.27" layer="121" font="vector" ratio="16" rot="R270">ANALOG</text>
+<text x="28.431996875" y="32.766" size="1.27" layer="121" font="vector" ratio="16" rot="SR180">DIGITAL</text>
+<text x="12.175996875" y="22.606" size="1.27" layer="121" font="vector" ratio="16" rot="SR270">ANALOG</text>
 <text x="31.766003125" y="12.192" size="1.27" layer="121" font="vector" ratio="16">I2C</text>
 <text x="38.878003125" y="24.13" size="1.27" layer="121" font="vector" ratio="16" rot="R90">POWER</text>
 <text x="21.098003125" y="4.318" size="1.016" layer="121" font="vector" ratio="20" rot="R90">GND</text>
@@ -871,10 +871,10 @@
 <text x="36.338003125" y="19.558" size="1.016" layer="121" font="vector" ratio="20" rot="R90">Rev 0.2</text>
 <text x="39.099996875" y="15.748" size="1.016" layer="121" font="vector" ratio="20" rot="R180">GND</text>
 <text x="38.354" y="19.541996875" size="1.016" layer="121" font="vector" ratio="20">6.1-15V</text>
-<text x="4.842003125" y="10.922" size="1.016" layer="121" font="vector" ratio="20" rot="R270">5V</text>
-<text x="2.302003125" y="10.922" size="1.016" layer="121" font="vector" ratio="20" rot="R270">GND</text>
-<text x="13.732003125" y="43.688" size="1.016" layer="121" font="vector" ratio="20" rot="R180">GND</text>
-<text x="13.732003125" y="41.148" size="1.016" layer="121" font="vector" ratio="20" rot="R180">5V</text>
+<text x="4.842003125" y="10.922" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">5V</text>
+<text x="2.302003125" y="10.922" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">GND</text>
+<text x="13.732003125" y="43.688" size="1.016" layer="121" font="vector" ratio="20" rot="SR180">GND</text>
+<text x="13.732003125" y="41.148" size="1.016" layer="121" font="vector" ratio="20" rot="SR180">5V</text>
 <text x="7.128003125" y="35.306" size="0.8128" layer="121" font="vector" ratio="25">MISO</text>
 <text x="4.080003125" y="27.94" size="0.8128" layer="121" font="vector" ratio="25">MOSI</text>
 <text x="4.334003125" y="35.306" size="0.8128" layer="121" font="vector" ratio="25">SCK</text>
@@ -914,8 +914,8 @@
 <text x="15.383003125" y="20.447" size="0.8128" layer="121" font="vector" ratio="25" rot="R90">104</text>
 <text x="29.610990625" y="21.935009375" size="0.8128" layer="121" font="vector" ratio="25" rot="R270">104</text>
 <text x="23.28900625" y="14.50700625" size="0.8128" layer="121" font="vector" ratio="25" rot="R270">104</text>
-<text x="26.120596875" y="27.432" size="0.8128" layer="121" font="vector" ratio="25" rot="R180">ATmega328P\</text>
-<text x="9.987990625" y="35.1020125" size="1.27" layer="121" font="vector" ratio="16" rot="R270">ISP/SPI</text>
+<text x="26.120596875" y="27.432" size="0.8128" layer="121" font="vector" ratio="25" rot="SR180">ATmega328P\</text>
+<text x="9.987990625" y="35.1020125" size="1.27" layer="121" font="vector" ratio="16" rot="SR270">ISP/SPI</text>
 <text x="12.208003125" y="7.493" size="1.27" layer="121" font="vector" ratio="16">FTDI</text>
 <text x="9.668003125" y="19.685" size="1.016" layer="121" font="vector" ratio="20">A0</text>
 <text x="9.668003125" y="17.145" size="1.016" layer="121" font="vector" ratio="20">A1</text>
@@ -923,14 +923,14 @@
 <text x="9.668003125" y="12.319" size="1.016" layer="121" font="vector" ratio="20">A3</text>
 <text x="9.668003125" y="24.765" size="1.016" layer="121" font="vector" ratio="20">A6</text>
 <text x="9.668003125" y="22.225" size="1.016" layer="121" font="vector" ratio="20">A7</text>
-<text x="32.655003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D2</text>
-<text x="30.115003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D3*</text>
-<text x="27.575003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D4</text>
-<text x="25.035003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D5*</text>
-<text x="22.495003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D6*</text>
-<text x="19.955003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D7</text>
-<text x="17.415003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D8</text>
-<text x="14.875003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="R270">D9*</text>
+<text x="32.655003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D2</text>
+<text x="30.115003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D3*</text>
+<text x="27.575003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D4</text>
+<text x="25.035003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D5*</text>
+<text x="22.495003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D6*</text>
+<text x="19.955003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D7</text>
+<text x="17.415003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D8</text>
+<text x="14.875003125" y="36.322" size="1.016" layer="121" font="vector" ratio="20" rot="SR270">D9*</text>
 <text x="43.831003125" y="32.258" size="1.016" layer="121" font="vector" ratio="20" rot="R90">GND</text>
 <text x="41.291003125" y="32.258" size="1.016" layer="121" font="vector" ratio="20" rot="R90">5V</text>
 <text x="39.099996875" y="18.415" size="1.016" layer="121" font="vector" ratio="20" rot="R180">VIN</text>

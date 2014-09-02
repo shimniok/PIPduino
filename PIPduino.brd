@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -15,15 +15,15 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -233,11 +233,11 @@
 <text x="16.468" y="17.326" size="1.27" layer="26" font="vector" ratio="18" rot="MR0">20MHz</text>
 <text x="16.468" y="15.548" size="1.27" layer="26" font="vector" ratio="18" rot="MR0">16MHz</text>
 <text x="16.468" y="13.77" size="1.27" layer="26" font="vector" ratio="18" rot="MR0">8MHz</text>
-<rectangle x1="16.849" y1="13.897" x2="17.865" y2="14.913" layer="26"/>
-<rectangle x1="16.849" y1="15.675" x2="17.865" y2="16.691" layer="26"/>
-<rectangle x1="16.849" y1="17.326" x2="17.865" y2="18.342" layer="26"/>
-<rectangle x1="16.849" y1="19.104" x2="17.865" y2="20.12" layer="26"/>
-<rectangle x1="16.849" y1="20.882" x2="17.865" y2="21.898" layer="26"/>
+<rectangle x1="16.849" y1="13.897" x2="17.865" y2="14.913" layer="22"/>
+<rectangle x1="16.849" y1="15.675" x2="17.865" y2="16.691" layer="22"/>
+<rectangle x1="16.849" y1="17.326" x2="17.865" y2="18.342" layer="22"/>
+<rectangle x1="16.849" y1="19.104" x2="17.865" y2="20.12" layer="22"/>
+<rectangle x1="16.849" y1="20.882" x2="17.865" y2="21.898" layer="22"/>
 <text x="4.064" y="26.924" size="0.8128" layer="25" font="vector" ratio="15">D11*</text>
 <text x="4.318" y="36.322" size="0.8128" layer="25" font="vector" ratio="15">D13</text>
 <text x="7.112" y="36.322" size="0.8128" layer="25" font="vector" ratio="15">D12</text>
@@ -991,6 +991,11 @@
 <text x="8.636" y="27.432" size="0.8128" layer="122" font="vector" ratio="25" rot="MR0">106</text>
 <text x="8.636" y="9.906" size="0.8128" layer="122" font="vector" ratio="25" rot="MR0">106</text>
 <text x="33.982" y="33.12" size="1.016" layer="122" font="vector" ratio="20" rot="MR270">NCP5500</text>
+<rectangle x1="16.849" y1="13.897" x2="17.865" y2="14.913" layer="122"/>
+<rectangle x1="16.849" y1="15.675" x2="17.865" y2="16.691" layer="122"/>
+<rectangle x1="16.849" y1="17.326" x2="17.865" y2="18.342" layer="122"/>
+<rectangle x1="16.849" y1="19.104" x2="17.865" y2="20.12" layer="122"/>
+<rectangle x1="16.849" y1="20.882" x2="17.865" y2="21.898" layer="122"/>
 </plain>
 <libraries>
 <library name="Arduino-AVR">

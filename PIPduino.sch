@@ -8954,7 +8954,7 @@ circuit protection. Dropout is 230 mV at 500 mA&lt;/p&gt;</description>
 <text x="170.18" y="172.72" size="2.54" layer="97">CONNECTORS</text>
 <text x="182.88" y="83.82" size="2.54" layer="97">LEDS</text>
 <text x="159.512" y="24.384" size="3.81" layer="94">PIPduino</text>
-<text x="231.14" y="24.384" size="3.81" layer="94">0.2</text>
+<text x="231.14" y="24.384" size="3.81" layer="94">0.3</text>
 </plain>
 <instances>
 <instance part="IC1" gate="1" x="68.58" y="137.16"/>
@@ -9006,8 +9006,8 @@ circuit protection. Dropout is 230 mV at 500 mA&lt;/p&gt;</description>
 <instance part="U$9" gate="G$1" x="111.76" y="38.1"/>
 <instance part="C5" gate="G$1" x="83.82" y="27.94"/>
 <instance part="SJ1" gate="G$1" x="88.9" y="76.2"/>
-<instance part="R3" gate="G$1" x="185.42" y="55.88" rot="R90"/>
-<instance part="D13" gate="G$1" x="185.42" y="68.58"/>
+<instance part="R3" gate="G$1" x="185.42" y="68.58" rot="R90"/>
+<instance part="D13" gate="G$1" x="185.42" y="58.42"/>
 <instance part="PWR" gate="G$1" x="198.12" y="58.42"/>
 <instance part="R5" gate="G$1" x="198.12" y="68.58" rot="R90"/>
 <instance part="U$10" gate="G$1" x="198.12" y="78.74"/>
@@ -9043,8 +9043,8 @@ circuit protection. Dropout is 230 mV at 500 mA&lt;/p&gt;</description>
 <segment>
 <wire x1="185.42" y1="76.2" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
 <label x="175.26" y="76.2" size="1.778" layer="95"/>
-<pinref part="D13" gate="G$1" pin="A"/>
-<wire x1="185.42" y1="71.12" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="73.66" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -9309,8 +9309,8 @@ circuit protection. Dropout is 230 mV at 500 mA&lt;/p&gt;</description>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="50.8" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="D13" gate="G$1" pin="C"/>
+<wire x1="185.42" y1="48.26" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -9615,13 +9615,6 @@ circuit protection. Dropout is 230 mV at 500 mA&lt;/p&gt;</description>
 <wire x1="30.48" y1="127" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="D13" gate="G$1" pin="C"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="60.96" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -9791,6 +9784,13 @@ circuit protection. Dropout is 230 mV at 500 mA&lt;/p&gt;</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="U$10" gate="G$1" pin="5V"/>
 <wire x1="198.12" y1="78.74" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="D13" gate="G$1" pin="A"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="63.5" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

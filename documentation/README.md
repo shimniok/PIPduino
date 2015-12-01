@@ -8,46 +8,86 @@ PIPduino is a 'duino that has a host of features making it easy for you to Put I
  * Flexible power: voltage regulator takes 6.1-15V, power from any 5V/GND pin
  * FTDI / Serial port can power the board
  * SPI port doubles as ISP port, user selectable
- * I2C port for interfacing all those sensors 
+ * I2C port for interfacing all those sensors
  * ATmega328P at 16MHz, Arduino Optiboot, looks like an Uno board
  * Optional 3mm indicator LEDs (leave them off to reduce power consumption)
 
 # Pinout
-The PIPduino breaks out dedicated digital and analog pins as well as pins for Serial, SPI, and I2C.
+The PIPduino breaks out dedicated digital and analog pins as well as pins for Serial, SPI, and I2C. The tables below list all the Arduino Pins, and the PIPduino *Port* they are found on, and alternate functions.
 
 ## Digital
- * D0: used for TXO on FTDI port
- * D1: used for RXI on FTDI port
- * D2: DIGITAL Port
- * D3: DIGITAL Port (PWM)
- * D4: DIGITAL Port
- * D5: DIGITAL Port (PWM)
- * D6: DIGITAL Port (PWM)
- * D7: DIGITAL Port
- * D8: DIGITAL Port
- * D9: DIGITAL Port (PWM)
- * D10: DIGITAL Port (PWM), also ~SS on SPI port (see SPI/ISP)
+
+The primary function of the pins below is Arduino digital input and output.
+Pins D10-D13 are also used for SPI (See *SPI/ISP* below).
+
+| Arduino Pin | Alternate | Port |
+|:---:|---|---|
+| D0 | Serial RX (FTDI TXO) | FTDI |
+| D1 | Serial TX (FTDI RXI) | FTDI |
+| D2 | - | DIGITAL |
+| D3 | PWM | DIGITAL |
+| D4 | - | DIGITAL |
+| D5 | PWM | DIGITAL |
+| D6 | PWM | DIGITAL |
+| D7 | - | DIGITAL |
+| D8 | - | DIGITAL |
+| D9 | PWM | DIGITAL |
+| D10 | PWM | DIGITAL |
+| D11 | PWM | SPI/ISP |
+| D12 | - | SPI/ISP |
+| D13 | LED | SPI/ISP |
 
 ## Analog
- * A0: ANALOG Port
- * A1: ANALOG Port
- * A2: ANALOG Port
- * A3: ANALOG Port
- * A4: used for SDA on I2C PORT
- * A5: used for SCL on I2C PORT
- * A6: ANALOG Port
- * A7: ANALOG Port
+
+Arduino analog pins can also be used for digital input/output. Pins A4-A5 are
+used for I2C (See *I2C* below). Pins A6-A7 are analog input, only.
+
+| Arduino Pin | Alternate | Port |
+|:---:|---|---|
+| A0 | Digital | ANALOG |
+| A1 | Digital | ANALOG |
+| A2 | Digital | ANALOG |
+| A3 | Digital | ANALOG |
+| A4 | Digital, SDA | I2C |
+| A5 | Digital, SCL | I2C |
+| A6 | - | ANALOG |
+| A7 | - | ANALOG |
 
 ## SPI/ISP
-The SPI port doubles as the In-System Programming port (AVRISP). Use the SS solder jumper under the board to select SPI:D10 to use the SPI port with D10 as the slave select pin.
+The SPI port doubles as the In-System Programming port (AVRISP). Use the SS
+solder jumper under the board to select SPI:D10 to use the SPI port with D10
+as the active-low Slave Select pin.
 
-NOTE: there is a silkscreen error on R0.2 -- the ~SS solder jumper silkscreen identifies the wrong digital pin for SPI operation. In fact, D10 is used for ~SS.
+| Arduino Pin | Function | Port |
+|:---:|---|---|
+| D10 | SS | SPI/ISP |
+| D11 | MOSI | SPI/ISP |
+| D12 | MISO | SPI/ISP |
+| D13 | SCK | SPI/ISP |
+
+NOTE: there is a silkscreen error on R0.2: the SS solder jumper silkscreen
+identifies the wrong digital pin for SPI operation. In fact, D10 is used for
+Slave Select.
 
 ## I2C
-The A4 and A5 pins are dedicated to I2C SDA and SCL use, respectively, since so many sensors speak I2C. Pull-up resistors are included. The board has connections for four I2C devices but you can also daisy chain them, too.
+The A4 and A5 pins are dedicated to I2C SDA and SCL use, respectively, since so
+many sensors speak I2C. SMT pull-up resistors are installed on the board for
+these pins. The board has connections for four I2C devices but you can also
+daisy chain I2C devices, too.
+
+| Arduino Pin | Function | Port |
+|:---:|---|---|
+| A4 | SDA | I2C |
+| A5 | SCL | I2C |
 
 ## Serial / FTDI
-The D0 and D1 pins are broken out to the FTDI/Serial port for RXI and TXO pins, respectively. The FTDI pins can be used for Arduino program downloading, or can be used for serial I/O. Because there's no pull-up they can also be used for GPIO pins D0 and D1.
+The D0 and D1 pins are broken out to the FTDI/Serial port for TX (FTDI RXI) and RX (FTDI TXO) pins, respectively. The FTDI pins can be used for Arduino program downloading, or can be used for serial I/O. Because there's no pull-up they can also be used for GPIO pins D0 and D1.
+
+| Arduino Pin | Function | FTDI | Port |
+|:---:|---|:---:|---|
+| D0 | Serial TX | RXI | FTDI |
+| D1 | Serial RX | TXO | FTDI |
+
 
 # Programming
 ## Arduino
@@ -65,7 +105,7 @@ Several options are available for powering your PIPduino and sensors/devices.
 ## Powering the Board
 * Use the onboard regulator. Connect the VIN/GND port to a supply of anywhere from Vcc+0.23V to 16V.
 * Bypass the regulator and supply 3.3V or 5V directly to any VCC/GND pin pair.
-* FTDI can supply voltage through the VCC pin if the board is not powered. A diode allows you to plug in FTDI whether the board is already powered or not. It drops 0.2-0.5V depending on current draw. 
+* FTDI can supply voltage through the VCC pin if the board is not powered. A diode allows you to plug in FTDI whether the board is already powered or not. It drops 0.2-0.5V depending on current draw.
 
 CAUTION: in any case above, your FTDI adapter's output voltage must be LESS THAN the voltage on the VCC pins of the POWER, ANALOG, DIGITAL, and I2C ports.
 

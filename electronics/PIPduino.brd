@@ -148,8 +148,8 @@
 <wire x1="43.46" y1="46" x2="2.54" y2="46" width="0" layer="20"/>
 <wire x1="2.54" y1="46" x2="0" y2="43.46" width="0" layer="20" curve="90"/>
 <text x="20.757" y="34.052" size="1.016" layer="25" font="vector" ratio="12" rot="SR180">PWM*</text>
-<text x="14.24" y="4.318" size="1.016" layer="25" font="vector" ratio="12" rot="R90">TXO</text>
-<text x="11.446" y="4.318" size="1.016" layer="25" font="vector" ratio="12" rot="R90">RXI</text>
+<text x="13.478" y="4.318" size="1.016" layer="25" font="vector" ratio="12" rot="R90">&gt;RX</text>
+<text x="10.938" y="4.318" size="1.016" layer="25" font="vector" ratio="12" rot="R90">&lt;TX</text>
 <text x="24.432" y="32.766" size="1.27" layer="25" font="vector" ratio="12" rot="SR180">DIGITAL</text>
 <text x="12.176" y="22.606" size="1.27" layer="25" font="vector" ratio="12" rot="SR270">ANALOG</text>
 <text x="31.766" y="12.192" size="1.27" layer="25" font="vector" ratio="12">I2C</text>
@@ -272,8 +272,8 @@
 <text x="4.064" y="26.924" size="0.8128" layer="25" font="vector" ratio="15">D11*</text>
 <text x="4.318" y="36.322" size="0.8128" layer="25" font="vector" ratio="15">D13</text>
 <text x="7.112" y="36.322" size="0.8128" layer="25" font="vector" ratio="15">D12</text>
-<text x="12.954" y="4.318" size="1.016" layer="25" font="vector" ratio="15" rot="R90">D1</text>
-<text x="10.16" y="4.318" size="1.016" layer="25" font="vector" ratio="15" rot="R90">D0</text>
+<text x="12.446" y="4.318" size="1.016" layer="26" font="vector" ratio="15" rot="MR90">D1</text>
+<text x="9.906" y="4.318" size="1.016" layer="26" font="vector" ratio="15" rot="MR90">D0</text>
 <text x="37" y="12.4" size="1.016" layer="26" font="vector" ratio="15" rot="MR0">http://is.gd/pipduino</text>
 <text x="26" y="30.008" size="1.4224" layer="25" font="vector" ratio="15">*HOT*</text>
 <text x="32.19" y="34.944" size="1.4224" layer="26" font="vector" ratio="15" rot="MR0">*HOT*</text>

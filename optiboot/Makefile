@@ -113,5 +113,6 @@ atmega328_pro8_isp: isp
 
 isp: $(TARGET)
 	$(ISPFUSES)
+	@echo "Waiting for 3 seconds between commands..."
 	@sleep 3
 	$(ISPFLASH)
